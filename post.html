@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>DES Kryptograpy</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand text-white-30" href="#page-top">Ahmad Roshid</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto ">
+                        <li class="nav-item"><a class="nav-link text-white-30" href="index.html">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link text-white-30" href="post.html">My Post</a></li>
+                        <li class="nav-item"><a class="nav-link text-white-30" href="index.html">My Projects</a></li>
+                        <li class="nav-item"><a class="nav-link text-white-30" href="index.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead_Post_Kryp">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <h1 class="text-white mx-auto my-0 text-uppercase">DES (DATA ENCRYPTION STANDARD)</h1>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Make Kryptograpy Program with Python</h2>
+                        <a class="btn btn-primary" href="#post_DES ">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4" id="post_DES">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <br><br><br>
+                        <h2 class="section-heading">Data Encryption Standard (DES) </h2>
+                        <p>is a block cipher algorithm that takes plain text in blocks of 64 bits and converts them to 
+                            ciphertext using keys of 48 bits. It is a symmetric key algorithm, which means that the same 
+                            key is used for encrypting and decrypting ​data.</p>
+                        <img class="img-fluid" src="assets/img/DES.png" alt="..." />
+                        <p>Developed in the early 1970s at IBM and based on an earlier design by Horst Feistel, 
+                            the algorithm was submitted to the National Bureau of Standards (NBS) following the agency's 
+                            invitation to propose a candidate for the protection of sensitive, unclassified electronic 
+                            government data. In 1976, after consultation with the National Security Agency (NSA), 
+                            the NBS selected a slightly modified version (strengthened against differential cryptanalysis, 
+                            but weakened against brute-force attacks), which was published as an 
+                            official Federal Information Processing Standard (FIPS) for the United States in 1977.</p>
+                        <p>The publication of an NSA-approved encryption standard led to its quick international 
+                            adoption and widespread academic scrutiny. Controversies arose from classified design elements, 
+                            a relatively short key length of the symmetric-key block cipher design, and the involvement 
+                            of the NSA, raising suspicions about a backdoor. The S-boxes that had prompted those suspicions 
+                            were designed by the NSA to remove a backdoor they secretly knew (differential cryptanalysis). 
+                            However, the NSA also ensured that the key size was drastically reduced so that they could break 
+                            the cipher by brute force attack.The intense academic scrutiny the algorithm received over time 
+                            led to the modern understanding of block ciphers and their cryptanalysis</p>
+                        <p>DES is insecure due to the relatively short 56-bit key size. In January 1999, distributed.net 
+                            and the Electronic Frontier Foundation collaborated to publicly break a DES key in 22 hours 
+                            and 15 minutes (see chronology). There are also some analytical results which demonstrate 
+                            theoretical weaknesses in the cipher, although they are infeasible in practice. The algorithm 
+                            is believed to be practically secure in the form of Triple DES, although there are theoretical 
+                            attacks. This cipher has been superseded by the Advanced Encryption Standard (AES). 
+                            DES has been withdrawn as a standard by the National Institute of Standards and Technology.</p>
+
+                        <h2 class="section-heading">Electronic Code Book (ECB) </h2>
+                        <p>Electronic Code Book (ECB) is a simple mode of operation with a block cipher that's mostly 
+                            used with symmetric key encryption. It is a straightforward way of processing a series of 
+                            sequentially listed message blocks.</p>
+                        <p>The input plaintext is broken into numerous blocks. The blocks are individually and independently 
+                            encrypted (ciphertext) using the encryption key. As a result, each encrypted block can also be decrypted
+                             individually. ECB can support a separate encryption key for each block type.</p>
+                        <p>In ECB, each block of plaintext has a defined corresponding ciphertext value, and vice versa. 
+                            So, identical plaintexts with identical keys always encrypt to identical ciphertexts. 
+                            This means that if plaintext blocks P1, P2 and so on are encrypted multiple times under the 
+                            same key, the output ciphertext blocks will always be the same.</p>
+                        <p>In other words, the same plaintext value will always result in the same ciphertext value. 
+                            This also applies to plaintexts with partial identical portions. For instance, plaintexts
+                             containing identical headers of a letter and encrypted with the same key will have partially 
+                             identical ciphertext portions.</p>
+                        <p>For any given key, a codebook of ciphertexts can be created for all possible plaintext blocks. 
+                            With the ECB mode, encryption entails only looking up the plaintext(s) and selecting the corresponding 
+                            ciphertext(s). This operation is like assigning code words in a codebook. In fact, the term "code book" 
+                            derives from the cryptographic codebooks used during the United States Civil War (1861-1865).</p>
+                        <img class="img-fluid" src="assets/img/ECB.png" alt="..." />
+                        <P>In terms of error correction, any bit errors in a ciphertext block will only affect decryption 
+                            of that block. Chaining dependency is not an issue. Any reordering of the ciphertext blocks will only 
+                            reorder the corresponding plaintext blocks. It won't affect decryption.</P>
+                        
+                        <h2 class="section-heading">What are drawbacks of Electronic Code Book?</h2>
+                        <ul>
+                            <li>ECB uses simple substitution rather than an initialization vector or chaining. 
+                                These qualities make it easy to implement. However, this is also its biggest drawback. 
+                                Two identical blocks of plaintext result in two correspondingly identical blocks of ciphertext, 
+                                making it cryptologically weak.</li>
+                            <li>ECB is not good to use with small block sizes -- say, for blocks smaller than 40 bits -- and 
+                                identical encryption modes. In small block sizes some words and phrases may be reused often in the plaintext. 
+                                This means that the ciphertext may carry (and betray) patterns from the same plaintext, and the same repetitive 
+                                part-blocks of ciphertext can emerge. When the plaintext patterns are obvious, it creates opportunities for bad 
+                                actors to guess the patterns and perpetrate a codebook attack.</li>
+                            <li>ECB security is weak but may be improved by adding random pad bits to each block. 
+                                Larger blocks (64-bit or more) would likely contain enough unique characteristics (entropy) 
+                                to make a codebook attack unlikely.
+                            </li>
+                          </ul>  
+                        <br>
+                        <h2 class="section-heading">Make a Program DAS ECB Mode Using Python</h2>
+                        <p>Before you run this Program, please install the module I used in the program 'pycryptodome'by installing via the terminal by typing</p>
+                        <h3 class="section-heading text-center">'pip install pycryptodome'</h3>
+                        <p class="text-center">Then press enter</p>
+                        <br>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="text-center">
+                                <h4>Download The Program Below</h4>
+                                <a class="btn btn-primary" href="https://drive.google.com/file/d/1MbUTejFJHXB0gHkVdwdJpJYbk4JZxb88/view?usp=sharing">Download Now</a>
+                            </div>
+                        </div>
+                        <br><br>
+                        <h3 class="section-heading text-center">Watch This Video For The Explanation</h3>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/EbylenPMQ-A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p>Thanks You For Visiting My Site</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <br>
+                        <h3 class="section-heading text-center">Follow Me!</h3>
+                        <br>
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="https://twitter.com/AhmadRoshid2">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/ahmad.roshid13/">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.instagram.com/ahmad_cem/">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                       <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://github.com/AhmadRoshid">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/in/ahmad-r-953292130/">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <h5 class="section-heading text-center">Thank You For Supporting Me!</h5>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Ahmad Roshid 2021</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
