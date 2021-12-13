@@ -11676,6 +11676,12 @@ body {
   margin-bottom: 5rem;
 }
 
+.about-img{
+  position: relative;
+  max-width: 450px;
+  transition: 0.5s;
+}
+
 .post-section {
   padding-top: 3rem;
   background: linear-gradient(to top, #F8F9FA 0%, rgba(0, 0, 0, 0.7) 75%, rgba(0, 0, 0, 0.8) 100%);
