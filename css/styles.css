@@ -4653,7 +4653,7 @@ textarea.form-control-lg {
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border-radius: 1.25rem;
 }
 .card > hr {
   margin-right: 0;
@@ -4940,6 +4940,7 @@ textarea.form-control-lg {
 .page-section {
   padding: 6rem 0;
 }
+
 .page-section h2.section-heading, .page-section .section-heading.h2 {
   font-size: 2.5rem;
   margin-top: 0;
@@ -4963,6 +4964,15 @@ textarea.form-control-lg {
   border: 1px solid #dee2e6;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
+.page-section2 {
+  padding-top: 3rem;
+  background: linear-gradient(to bottom, #F8F9FA 0%, rgba(0, 0, 0, 0.7) 75%, rgba(0, 0, 0, 0.8) 100%);
+}
+.page-section2 p {
+  margin-bottom: 5rem;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .page-link {
     transition: none;
@@ -11627,7 +11637,7 @@ body {
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  background: whitesmoke;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
@@ -11668,7 +11678,7 @@ body {
 
 .post-section {
   padding-top: 3rem;
-  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+  background: linear-gradient(to top, #F8F9FA 0%, rgba(0, 0, 0, 0.7) 75%, rgba(0, 0, 0, 0.8) 100%);
 }
 .post-section p {
   margin-bottom: 5rem;
@@ -11679,32 +11689,6 @@ body {
 }
 .projects-section .featured-text {
   padding: 2rem;
-}
-
-.post-preview > a {
-  color: #212529;
-}
-.post-preview > a:focus, .post-preview > a:hover {
-  text-decoration: none;
-  color: #0085A1;
-}
-.post-preview > a > .post-title {
-  font-size: 1.875rem;
-  margin-top: 1.875rem;
-  margin-bottom: 0.625rem;
-}
-.post-preview > a > .post-subtitle {
-  font-weight: 300;
-  margin-bottom: 0.625rem;
-}
-.post-preview > .post-meta {
-  font-size: 1.125rem;
-  font-style: italic;
-  margin-top: 0;
-  color: #6c757d;
-}
-.post-preview > .post-meta > a {
-  text-decoration: none;
 }
 
 @media (min-width: 992px) {
@@ -12049,4 +12033,183 @@ body {
 
 .footer {
   padding: 5rem 0;
+}
+
+/*  portp section*/
+
+.portofolio-box{
+  position: relative;
+  background: linear-gradient(to bottom, #343a40 0%, #cad4d4 100%);
+  border-radius: 12px;
+  height: 500px;
+  transform-style: preserve-3d;
+}
+
+.portofolio-box::before{
+  content: 'My';
+  position: absolute;
+  color: #fff;
+  font-size: 4em;
+  font-weight: bold;
+  font-style: italic;
+  top: 30px;
+  left: 50%;
+  transform: translate3d(-50%, 0, 20px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.portofolio-box:hover::before{
+  opacity: 0.6;
+}
+
+.portofolio-box::After{
+  content: 'Portfolio';
+  position: absolute;
+  color: #fff;
+  font-size: 3em;
+  font-weight: bold;
+  font-style: italic;
+  top: 350px;
+  left: 50%;
+  transform: translate3d(-50%, 0, 20px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.portofolio-box:hover::after{
+  opacity: 0.6;
+}
+
+.porto-name{
+  color: #fff;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  opacity: 0;
+  transition: 0.5s;
+  transform: translate3d(0, 0, 50px);
+}
+
+.portofolio-box:hover .porto-name{
+  top: 20px;
+  opacity: 1;
+}
+
+.porto-detail-btn{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 120px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.portofolio-box:hover .porto-detail-btn{
+  opacity: 1;
+  bottom: 10px;
+}
+
+.portfolio-img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 100px);
+  max-width: 250px;
+  transition: 0.5s;
+}
+
+.portofolio-box:hover .portfolio-img{
+  transform: translate3d(-50%, -50%, 100px) rotate(5deg) scale(1.2);
+}
+
+/* skills section */
+.skills-box{
+  position: relative;
+  background: linear-gradient(to bottom, #343a40 0%, #cad4d4 100%);
+  border-radius: 12px;
+  height: 400px;
+  transform-style: preserve-3d;
+}
+
+.skills-box::before{
+  content: 'My';
+  position: absolute;
+  color: #fff;
+  font-size: 4em;
+  font-weight: bold;
+  font-style: italic;
+  top: 30px;
+  left: 50%;
+  transform: translate3d(-50%, 0, 20px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.skills-box:hover::before{
+  opacity: 0.6;
+}
+
+.skills-box::After{
+  content: 'Skill';
+  position: absolute;
+  color: #fff;
+  font-size: 3em;
+  font-weight: bold;
+  font-style: italic;
+  top: 300px;
+  left: 50%;
+  transform: translate3d(-50%, 0, 20px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.skills-box:hover::after{
+  opacity: 0.6;
+}
+
+.skills-name{
+  color: #fff;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  opacity: 0;
+  transition: 0.5s;
+  transform: translate3d(0, 0, 50px);
+}
+
+.skills-box:hover .skills-name{
+  top: 20px;
+  opacity: 1;
+}
+
+.porto-detail-btn{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 120px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.skills-box:hover .porto-detail-btn{
+  opacity: 1;
+  bottom: 10px;
+}
+
+.skills-img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 100px);
+  max-width: 250px;
+  transition: 0.5s;
+}
+
+.skills-box:hover .skills-img{
+  transform: translate3d(-50%, -50%, 100px) rotate(5deg) scale(1.2);
 }
